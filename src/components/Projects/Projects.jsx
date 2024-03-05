@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 const Section = styled.section`
   min-height: 500px;
@@ -44,7 +44,7 @@ const TitleProjects = styled.h2`
 
 const Projects = () => {
   return (
-    <ProjectContainer id='projects'>
+    <ProjectContainer id="projects">
       <TitleProjects>Projects</TitleProjects>
       <Section>
         <TitleProject>Movie App</TitleProject>
@@ -59,6 +59,14 @@ const Projects = () => {
         <BodyProject>
           <a target="_blank" href="https://ionpetrascu.github.io/you-meal/">
             <ImageProject src="2.png"></ImageProject>
+          </a>
+        </BodyProject>
+      </Section>
+      <Section>
+        <TitleProject>Stuff</TitleProject>
+        <BodyProject>
+          <a target="_blank" href="https://stuff-react.netlify.app">
+            <ImageProject src="3.jpg"></ImageProject>
           </a>
         </BodyProject>
       </Section>
