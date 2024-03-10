@@ -62,14 +62,6 @@ const Projects = () => {
           </a>
         </BodyProject>
       </Section>
-      <Section>
-        <TitleProject>Stuff</TitleProject>
-        <BodyProject>
-          <a target="_blank" href="https://stuff-react.netlify.app">
-            <ImageProject src="3.jpg"></ImageProject>
-          </a>
-        </BodyProject>
-      </Section>
     </ProjectContainer>
   );
 };
