@@ -9,15 +9,18 @@ const Form = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-
+    try {
     emailjs
-      .sendForm('service_66k5eag', 'template_rz6tcm2', form.current, {
-        publicKey: 'ygMnV3uxEeknrHo7u',
+        .sendForm("service_66k5eag", "template_rz6tcm2", form.current, {
+          publicKey: "ygMnV3uxEeknrHo7u",
       })
       .then(() => {
-        toast('Messages sent successfully');
-      })
-      .error(toast('Error send message'));
+          toast("Messages sent successfully");
+        });
+    } catch (error) {
+      toast("Error send message");
+      console.log(error);
+    }
   };
 
   return (
